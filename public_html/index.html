@@ -1,6 +1,18 @@
-<form action="http://foo.com" method="post">
-  Значение: <input type="text" name="number">
-  <div>
-    <button>Send number</button>
-  </div>
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HW02_static</title><meta charset="utf-8">
+    </head>
+    <body>
+        Значение: <input type="text" name="number" id = "number">
+        <div>
+          <button id = "button">Send number</button>
+        </div>
+        <script>
+            document.querySelector("#button").onclick = function(){
+                var num = document.getElementById("#number").value;
+                alert(num);
+            }
+        </script>
+    </body>
+</html>
