@@ -18,14 +18,14 @@
 
                 var params = new URLSearchParams('login=sdfsd');
 
-                let response = await fetch('https://cors-anywere.herokuapp.com/' + 'https://HW02proj.obraztsovoleg.repl.co', {
+                let response = await fetch('https://cors-anywere.herokuapp.com/' + 'https://stormy-lowlands-76650.herokuapp.com/', {
                     method: 'POST',
                     body: params
                 });
 
                 let result = await response.text();
 
-                num_window.textContent = result;
+                num_window.textContent = result + 1;
             }
         </script>
     </body>
