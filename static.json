@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-       "X-Author": "ObraztsovOleg"
+      "X-Author": "ObraztsovOleg",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
