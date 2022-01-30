@@ -12,20 +12,18 @@
             document.querySelector("#button").onclick = async function(){
                 var num = document.getElementById("number").value;
 
-                let user = {
-                    login: 'John'
-                };
+                let user = 'login=sdfas';
 
                 let response = await fetch('https://cors-anywere.herokuapp.com/' + 'https://HW02proj.obraztsovoleg.repl.co', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json;charset=utf-8'
                     },
-                    body: JSON.stringify(user)
+                    body: user
                 });
 
-                let result = await response.json();
-                alert(result.message);
+                let result = await response;
+                alert(result);
             }
         </script>
     </body>
