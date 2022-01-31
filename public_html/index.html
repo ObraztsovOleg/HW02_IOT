@@ -24,10 +24,10 @@
                 });
 
                 let result = await response.text();
-                if (!isNaN(Number(text))) {
-                    num_window.textContent = Number(result) + 1;
-                } else {
+                if (isNaN(Number(text))) {
                     num_window.textContent = result;
+                } else {
+                    num_window.textContent = Number(result) + 1;
                 }
 
             }
